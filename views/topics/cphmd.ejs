@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><%- include ('../partials/header.ejs') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CpHMD</title>
+</head>
+<%- include ('../partials/navbar.ejs') %>
+
+<body>
+    <div class="container topics-container">
+        <h3 class="text-center">Development of Continuous Constant pH Molecular Dynamics</h3>
+        <hr>
+        <p class="bruhmoment">
+            In recent years, Shen lab further developed CpHMD to improve the accuracy and generalizability. The
+            developments includes the GB-Neck2 based CpHMD, the hybrid-solvent and all-atom GRF and PME CpHMD. Our goal
+            is to offer an accurate, reliable and computational efficient pH-controlling tool (pH stat) to the community
+            in the near future. The CpHMD tools are implemented in both CHARMM and Amber packages.
+            We have recently completed the GPU implementation of the GBNeck2-CpHMD method in Amber. The GPU
+            implementation of the all-atom PME-CpHMD method in Amber is under testing.
+        </p>
+        <div class="pub-block">
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Harris RC and Shen J*</h6>
+                            <small class="text-muted pub-date">2019</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                GPU-accelerated implementation of continuous constant pH molecular dynamics in Amber:
+                                pK<sub>a</sub>
+                                predictions with single pH simulations.
+                            </b></h6>
+                        </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">J Chem Inf Model 59: 4821-4832, 2019 </h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc6934042/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC6934042</a> <a href="https://doi.org/10.1021/acs.jcim.9b00754"><span
+                                    class="pub-a">DOI:</span> 10.1021/acs.jcim.9b00754</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample1"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample1">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/topics/cphmd/cphmd_1.gif"
+                                style="object-fit:cover; width: 100%" alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                We present a GPU implementation of the continuous constant pH molecular dynamics (CpHMD)
+                                based on the most recent generalized Born implicit-solvent model in the pmemd engine of
+                                the Amber molecular dynamics package. To test the accuracy of the tool for rapid pKa
+                                predictions, a series of 2 ns single-pH simulations were performed for over 120
+                                titratable residues in 10 benchmark proteins that were previously used to test the
+                                various continuous CpHMD methods.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Huang YD, Harris RC, Shen J*</h6>
+                            <small class="text-muted pub-date">2018</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                Generalized Born based continuous constant pH molecular dynamics in Amber:
+                                implementation,
+                                benchmarking, and analysis.
+                            </b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">J Chem Inf Model 58:1372-1383, 2018</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc6516748/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC6516748</a> <a href="https://doi.org/10.1021/acs.jcim.8b00227"><span
+                                    class="pub-a">DOI:</span> 10.1021/acs.jcim.8b00227</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample2"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample2">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/Continuous.png" style="object-fit:cover; width: 100%"
+                                alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                We report the CPU implementation of the CpHMD method based on the GBNeck2 generalized
+                                Born (GB) implicit-solvent model in the pmemd engine of the Amber molecular dynamics
+                                package. Benchmark data based on 11 proteins are discussed. The related software is
+                                disseminated through Amber18.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Huang YD, Chen W, and Shen J*</h6>
+                            <small class="text-muted pub-date">2016</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                Continuous constant pH molecular dynamics with particle-mesh Ewald and titratabe water.
+                            </b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">Chem Theory Comput 12: 5411-5421, 2016</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc5713900/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC5713900</a> <a href="https://doi.org/10.1021/acs.jctc.6b00552"><span
+                                    class="pub-a">DOI:</span> 10.1021/acs.jctc.6b00552</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample3"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/Molecular.png" style="object-fit:cover; width: 100%"
+                                alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                Development of a pH stat to control solution pH in biomolecular simulations remains a
+                                outstanding goal. In recent years, the constant pH molecular dynamics methods have
+                                emerged; however, the accuracy and generality have been hampered by the use of
+                                implicit-solvent models or truncation-based electrostatic schemes. We reported the first
+                                implementation of the all-atom PME-based continuous constant pH method and benchmark
+                                results on a set of commonly used proteins.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Chen W and Shen J*</h6>
+                            <small class="text-muted pub-date">2014</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                Effects of system net charge and electrostatic truncation on all-atom constant pH
+                                molecular
+                                dynamics.</b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">J Comput Chem 35: 1986-1996, 2014</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc4165709/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC4165709</a> <a href="https://doi.org/10.1002/jcc.23713"><span
+                                    class="pub-a">DOI:</span> 10.1002/jcc.23713</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample4"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/topics/cphmd/cphmd_2.jpg"
+                                style="object-fit:cover; width: 100%" alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                Constant pH molecular dynamics offers a means to rigorously study the effects of
+                                solution pH on dynamical processes. Here, we address two critical questions arising from
+                                the most recent developments of the all-atom continuous constant pH molecular dynamics
+                                (CpHMD) method: (1) What is the effect of spatial electrostatic truncation on the
+                                sampling of protonation states? (2) Is the enforcement of electrical neutrality
+                                necessary for constant pH simulations?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Chen W, Wallace JA, Yue Z, and Shen JK*</h6>
+                            <small class="text-muted pub-date">2013</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                Introducing titratable water to all-atom molecular dynamics at constant pH.</b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">Biophys J 105: L15-L17, 2013</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc3752133/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC3752133</a> <a href="https://doi.org/10.1016/j.bpj.2013.06.036"><span
+                                    class="pub-a">DOI:</span> 10.1016/j.bpj.2013.06.036</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample5"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample5">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/topics/cphmd/cphmd_3.jpg"
+                                style="object-fit:cover; width: 100%" alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                Recent development of titratable coions has paved the way for realizing all-atom
+                                molecular dynamics at constant pH. To further improve physical realism, here we describe
+                                a technique in which proton titration of the solute is directly coupled to the
+                                interconversion between water and hydroxide or hydronium. We test the new method in
+                                replica-exchange continuous constant pH molecular dynamics simulations of three
+                                proteins, HP36, BBL, and HEWL.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Wallace JA and Shen JK*</h6>
+                            <small class="text-muted pub-date">2012</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                Charge-leveling and proper treatment of long-range electrostatics in all-atom molecular
+                                dynamics
+                                at constant pH.</b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">J Chem Phys 137: 184105, 2012</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc3511335/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC3511335</a> <a href="https://doi.org/10.1063/1.4766352"><span
+                                    class="pub-a">DOI:</span> 10.1063/1.4766352</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample6"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample6">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/topics/cphmd/cphmd_4.jpg"
+                                style="object-fit:cover; width: 100%" alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                Recent development of constant pH molecular dynamics (CpHMD) methods has offered promise
+                                for adding pH-stat in molecular dynamics simulations. However, until now the working pH
+                                molecular dynamics (pHMD) implementations are dependent in part or whole on
+                                implicit-solvent models. Here we show that proper treatment of long-range electrostatics
+                                and maintaining charge neutrality of the system are critical for extending the
+                                continuous pHMD framework to the all-atom representation. The former is achieved here by
+                                adding forces to titration coordinates due to long-range electrostatics based on the
+                                generalized reaction field method, while the latter is made possible by a
+                                charge-leveling technique that couples proton titration with simultaneous ionization or
+                                neutralization of a co-ion in solution. We test the new method using the
+                                pH-replica-exchange CpHMD simulations of a series of aliphatic dicarboxylic acids with
+                                varying carbon chain length. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                The first-generation CpHMD technique was developed in the Brooks group. This method utilizes
+                the generalized
+                Born implicit-solvent model for both conformational and protonation state sampling. It was
+                recognized as one
+                of the most accurate pK<sub>a</sub> prediction tools in the blind protein pK<sub>a</sub>
+                prediction exercise in 2009.
+            </p>
+
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Wallace JA and Shen JK*</h6>
+                            <small class="text-muted pub-date">2011</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                                Continuous constant pH molecular dynamics in explicit solvent with pH-based replica
+                                exchange.</b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">J Chem Theory Comput 7: 2617-2629, 2011</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc6425487/"><span
+                                    class="pub-a">PMCID:</span>
+                                PMC6425487</a> <a href="https://doi.org/10.1021/ct200146j"><span
+                                    class="pub-a">DOI:</span> 10.1021/ct200146j</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample7"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample7">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/topics/cphmd/cphmd_5.jpg"
+                                style="object-fit:cover; width: 100%" alt="Card image cap">
+                        </div>
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                A computational tool that offers accurate pKa values and atomically detailed knowledge
+                                of protonation-coupled conformational dynamics is valuable for elucidating mechanisms of
+                                energy transduction processes in biology, such as enzyme catalysis and electron transfer
+                                as well as proton and drug transport. Toward this goal we present a new technique of
+                                embedding continuous constant pH molecular dynamics within an explicit-solvent
+                                representation. In this technique we make use of the efficiency of the generalized-Born
+                                (GB) implicit-solvent model for estimating the free energy of protein solvation while
+                                propagating conformational dynamics using the more accurate explicit-solvent model.
+                                Also, we employ a pH-based replica exchange scheme to significantly enhance both
+                                protonation and conformational state sampling. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Khandogin J and Brooks CL III*</h6>
+                            <small class="text-muted pub-date">2006</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                            Toward the accurate first-principles prediction of ionization equilibria in
+                            proteins.</b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">Biochemistry 45: 9363-9373, 2006</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a href="https://doi.org/10.1021/bi060706r"><span
+                                    class="pub-a">DOI:</span> 10.1021/bi060706r</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample8"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample8">
+                <div class="card-body">
+                    <div class="row">
+                        
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                The calculation of pK(a) values for ionizable sites in proteins has been traditionally based on numerical solutions of the Poisson-Boltzmann equation carried out using a high-resolution protein structure. In this paper, we present a method based on continuous constant pH molecular dynamics (CPHMD) simulations, which allows the first-principles description of protein ionization equilibria. Our method utilizes an improved generalized Born implicit solvent model with an approximate Debye-Hückel screening function to account for salt effects and the replica-exchange (REX) protocol for enhanced conformational and protonation state sampling. The accuracy and robustness of the present method are demonstrated by 1 ns REX-CPHMD titration simulations of 10 proteins, which exhibit anomalously large pK(a) shifts for the carboxylate and histidine side chains.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group" style="display: flex;">
+                <div style="border-top: 1px solid rgba(0,0,0,.125) !important;" style="border-radius: 0 !important;"
+                    class="list-group-item list-group-item-action pub-link">
+                    <div class="publication-link">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 pub-authors">Khandogin J* and Brooks CL III</h6>
+                            <small class="text-muted pub-date">2005</small>
+                        </div>
+                        <h6 class="mb-1 pub-description"><b>
+                            Constant pH molecular dynamics simulation with proton tautomerism.</b></h6>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <div class="publication-link" href="#">
+                            <h6 class=" pub-title ">Biophys J 89: 141-157, 2005</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> 
+                            <a
+                                href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc1366513/"><span
+                                    class="pub-a">PMCID:</span>
+                                    PMC1366513</a>
+                            
+                            <a href="https://doi.org/10.1529/biophysj.105.061341"><span
+                                    class="pub-a">DOI:</span> 10.1529/biophysj.105.061341</a>
+                        </h6>
+                        <button data-toggle="collapse" style="z-index: 1000" data-target="#collapseExample9"
+                            aria-expanded="false" class="btn btn-sm synopsis-btn">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card abstract-card collapse" style="min-height: 0px; " id="collapseExample9">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="pub-img" src="/images/topics/cphmd/cphmd_6.jpg"
+                                style="object-fit:cover; width: 100%" alt="Card image cap">
+                        </div>
+                        
+                        <div class="col-lg-9">
+                            <p style="font-size: 16px;" class="card-text pub-img-description">
+                                The current article describes a new two-dimensional lambda-dynamics method to include proton tautomerism in continuous constant pH molecular dynamics (CPHMD) simulations. The two-dimensional lambda-dynamics framework is used to devise a tautomeric state titration model for the CPHMD simulations involving carboxyl and histidine residues. Combined with the GBSW implicit solvent model, the new method is tested on titration simulations of blocked histidine and aspartic acid as well as two benchmark proteins, turkey ovomucoid third domain (OMTKY3) and ribonuclease A (RNase A). A detailed analysis of the errors inherent to the CPHMD methodology as well as those due to the underlying solvation model is given. The average absolute error for the computed pKa values in OMTKY3 is 1.0 pK unit. In RNase A the average absolute errors for the carboxyl and histidine residues are 1.6 and 0.6 pK units, respectively.                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+        <%- include ('../partials/scripts.ejs') %>
+        <%- include ('../partials/footer.ejs') %>
+
+</body>
+
+
+
+
+
+
+</html>

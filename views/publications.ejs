@@ -1,0 +1,380 @@
+<html>
+
+<head>
+
+    <%- include ('./partials/header.ejs') %>
+    <%- include ('./partials/scripts.ejs') %>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/js/bootstrap-select.min.js"></script>
+    <title>Publications</title>
+</head>
+<%- include ('./partials/navbar.ejs') %>
+
+<body>
+
+    <h3 class="text-center red-color">Publications</h3>
+    
+
+    <div class="publications-buttons">
+        <!-- Button trigger modal -->
+        <% if (user){ %>
+
+        <button type="button" class="btn btn-primary add-publication" data-toggle="modal" data-target="#exampleModal">
+            Add Publication
+        </button>
+        <% } %>
+        <div class="btn-group">
+            <button type="button" class="mb-2 btn btn-sm  year-btn dropdown-toggle dropdown-sort" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Show Year: ALL
+            </button>
+            <div class="dropdown-menu dropdown-menu-sort">
+                <a class="dropdown-item all-dates" href="#">ALL</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item 2021" href="#">2021</a>
+                <a class="dropdown-item 2020" href="#">2020</a>
+                <a class="dropdown-item 2019" href="#">2019</a>
+                <a class="dropdown-item 2018" href="#">2018</a>
+                <a class="dropdown-item 2017" href="#">2017</a>
+                <a class="dropdown-item 2016" href="#">2016</a>
+                <a class="dropdown-item 2015" href="#">2015</a>
+                <a class="dropdown-item 2014" href="#">2014</a>
+                <a class="dropdown-item 2013" href="#">2013</a>
+                <a class="dropdown-item 2012" href="#">2012</a>
+                <a class="dropdown-item 2011" href="#">2011</a>
+                <a class="dropdown-item 2010" href="#">2010</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item older" href="#">Older</a>
+
+            </div>
+
+        </div>
+
+
+        <% const number = 5; %>
+
+
+        
+        <% if (user){ %>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Publication</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3></h3>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text publication-number" style="min-width: 110px;"
+                                    id="addon-wrapping">Number</span>
+                            </div>
+                            <input type="text" class="form-control publication-number-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text publication-author" style="min-width: 110px;"
+                                    id="addon-wrapping">Author(s)</span>
+                            </div>
+                            <input type="text" class="form-control publication-author-input" placeholder=""
+                                aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class=" input-group-text publication-description" style="min-width: 110px;"
+                                    id="addon-wrapping">Description</span>
+                            </div>
+                            <textarea class="form-control publication-description-input" aria-label="Username"
+                                aria-describedby="addon-wrapping"></textarea>
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text publication-title" style="min-width: 110px;"
+                                    id="addon-wrapping">Journal</span>
+                            </div>
+                            <input type="text" class="form-control publication-title-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend" ">
+                                <span class=" input-group-text publication-doi-link" style="min-width: 110px;"
+                                id="addon-wrapping">DOI Link</span>
+                            </div>
+                            <input type="text" class="form-control publication-doi-link-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend" ">
+                                <span class=" input-group-text publication-doi-title" style="min-width: 110px;"
+                                id="addon-wrapping">DOI Title</span>
+                            </div>
+                            <input type="text" class="form-control publication-doi-title-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend" ">
+                                <span class=" input-group-text publication-pmcid-link" style="min-width: 110px;"
+                                id="addon-wrapping">PMCID Link</span>
+                            </div>
+                            <input type="text" class="form-control publication-pmcid-link-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend" ">
+                                <span class=" input-group-text publication-pmcid-title" style="min-width: 110px;"
+                                id="addon-wrapping">PMCID Title</span>
+                            </div>
+                            <input type="text" class="form-control publication-pmcid-title-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class=" input-group-text publication-date" style="min-width: 110px;"
+                                    id="addon-wrapping">Date</span>
+                            </div>
+                            <input type="text" class="form-control publication-date-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class=" input-group-text publication-imagePath" style="min-width: 110px;"
+                                    id="addon-wrapping">Image URL / Path</span>
+                            </div>
+                            <input type="text" class="form-control publication-imagePath-input" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                            <div class="input-group-prepend">
+                                <img class="publication-imagePreview" src="" alt="">
+                            </div>
+                        </div>
+                        <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class=" input-group-text publication-imageDescription" style="min-width: 110px;"
+                                    id="addon-wrapping">Extra Description</span>
+                            </div>
+                            <textarea type="text" class="form-control publication-imageDescription-input"
+                                aria-label="Username" aria-describedby="addon-wrapping"></textarea>
+                        </div>
+                        <h5>Tags</h5>
+                        <div class="row">
+                            <div class="col-8">
+                                <select class="selectpicker" data-width="100%" multiple>
+                                    <!-- Loaded with generated tags -->
+                                    <%console.log(tags)%>
+                                    <% for (let i = 0; i < tags.length; i++) {%> 
+                                    <option><%=tags[i].tag.name%></option>
+                                    <%}%>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <button class="select-all btn btn-secondary">Select All</button>
+                                <button class="deselect-all btn btn-secondary">Deselect All</button>
+                            </div>
+                        </div>
+                        <div class="input-group mt-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class=" input-group-text publication-tagDescription" style="min-width: 110px;"
+                                    id="addon-wrapping">Add a tag</span>
+                            </div>
+                            <input type="text" class="form-control publication-tag-input" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                            <button class="add-tag btn btn-secondary">Add</button>
+
+                        </div>
+                        <!-- <div class="input-group mb-2 flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class=" input-group-text publication-imageDescription" style="min-width: 110px;"
+                                    id="addon-wrapping">Tags</span>
+                            </div>
+                            
+                        </div> -->
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-button" data-dismiss="modal">Close</button>
+                        <button type="button" data-dismiss="modal"
+                            class="btn btn-primary accept-button add-button">Add</button>
+                        <button style="display: none;" type="button" data-dismiss="modal"
+                            class="btn btn-primary save-button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+    </div>
+
+
+    <div class="container publications-container">
+        <div class="text-right">
+            <h6>View <a href="https://www.zotero.org/groups/2660547/janashenlab/library"><span class="zotero">Z</span>otero</a> Group Library JanaShenLab</h6>
+            
+        </div>
+        <div class="publication">
+            <div class="list-group">
+                <% data.sort((a, b) => (a.number > b.number) ? -1 : 1)%>
+                <% for (let i = 0; i < data.length; i++) { %>
+                <% if (data[i].imagePath){ %>
+                <div class="pub-block" id="<%= data[i].number %>">
+                    <div class="group" style="display: flex;">
+                        <% if (user){ %>
+                        <button number="<%= i %>" style="border-radius: 0 !important; border-bottom: 1px solid white;"
+                            data-toggle="modal" data-target="#exampleModal" class="btn edit-button btn-primary ">
+                            Edit
+                        </button>
+                        <% } %>
+                        <!-- <button number="" style="border-radius: 0 !important; border-bottom: 1px solid white;"
+                            data-toggle="modal" data-target="#exampleModal" class="btn edit-button btn-primary ">
+                            <i class="fas fa-file-pdf fa-4x"></i>
+                        </button> -->
+                        <div id="<%= data[i].id %>" number="<%= i %>"
+                            style="border-top: 1px solid rgba(0,0,0,.125) !important;"
+                            style="border-radius: 0 !important;"
+                            class="list-group-item list-group-item-action pub-link">
+                            <div class="publication-link">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="text-muted pub-number"><%=data[i].number%></small>
+                                    <small class="text-muted pub-date"><%=data[i].date%></small>
+                                </div>
+                                <h6 class="mb-1 pub-authors"><%= data[i].authors%></h6>
+                                <h6 class="mb-1 pub-description"><b><%= data[i].description %></b></h6>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="publication-link" href="<%= data[i].link %>">
+                                    <h6 class=" pub-title "><%=data[i].title%>, <%=data[i].date%> </h6>
+                                </div>
+                            </div>
+                            <% if (data[i].pmcid){ %>
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a href="<%=data[i].plink%>" target="_blank"><span class="pub-a">PMCID:</span>
+                                    <%=data[i].pmcid%></a> <a href="<%=data[i].dlink%>" target="_blank"><span
+                                        class="pub-a">DOI:</span> <%=data[i].doi%> </a>
+                            </h6>
+                                <button data-toggle="collapse" style="z-index: 1000"
+                                    data-target="#collapseExample<%=data[i].number%>" aria-expanded="false"
+                                    class="btn btn-sm synopsis-btn">More</button>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <div>
+                                    <% for (let j = 0; j < data[i].tags.length; j++){ %> 
+                                        <% let color = data[i].tagsColor[j];%>
+                                        <span class="badge" style="background-color: <%=color%>;"><%=data[i].tags[j]%></span>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <%}%>
+                            
+                                
+                        </div>
+                        <% if (user){ %>
+                        <button number="<%= i %>" style="border-radius: 0 !important; border-bottom: 1px solid white;"
+                            class="btn delete-button btn-danger ">
+                            Delete
+                        </button>
+                        <% } %>
+                    </div>
+                    <div class="card abstract-card collapse" style="min-height: 0px; "
+                        id="collapseExample<%=data[i].number%>">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img class="pub-img" src="<%= data[i].imagePath %> "
+                                        style="object-fit:cover; width: 100%" alt="Card image cap">
+                                </div>
+                                <div class="col-lg-9">
+                                    <p style="font-size: 16px;" class="card-text pub-img-description">
+                                        <%=data[i].imageDescription%></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%} else{ %>
+                    <div class="pub-block" id="<%= data[i].number %>">
+                        <div class="group" style="display: flex;">
+                            <% if (user){ %>
+                            <button number="<%= i %>"
+                                style="border-radius: 0 !important; border-bottom: 1px solid white;" data-toggle="modal"
+                                data-target="#exampleModal" class="btn edit-button btn-primary ">
+                                Edit
+                            </button>
+                            <% } %>
+                            <div id="<%= data[i].id %>" number="<%= i %>"
+                                style="border-top: 1px solid rgba(0,0,0,.125) !important;"
+                                style="border-radius: 0 !important;"
+                                class="list-group-item list-group-item-action pub-link">
+                                <div class="publication-link">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <small class="text-muted pub-number"><%=data[i].number%></small>
+                                        <small class="text-muted pub-date"><%=data[i].date%></small>
+                                    </div>
+                                    <h6 class="mb-1 pub-authors"><%= data[i].authors%></h6>
+                                    <h6 class="mb-1 pub-description"><b><%= data[i].description %></b></h6>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <div class="publication-link" href="<%= data[i].link %>">
+                                        <h6 class=" pub-title "><%=data[i].title%>, <%=data[i].date%> </h6>
+                                    </div>
+                                </div>  
+                                <% if (data[i].pmcid && data[i].id != "5efc9d7a2be41b0017f6e2b6" && data[i].id != "5fc91ef7e15df92085ca87c8"){ %>
+                                <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a href="<%=data[i].plink%>" target="_blank"><span class="pub-a">PMCID:</span>
+                                        <%=data[i].pmcid%></a> <a href="<%=data[i].dlink%>" target="_blank"><span
+                                            class="pub-a">DOI:</span> <%=data[i].doi%> </a>
+                                        
+                                </h6>
+                                <% } else if (data[i].id == "5efc9d7a2be41b0017f6e2b6"){ %>
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a href="<%=data[i].plink%>" target="_blank"><span class="pub-a">PMCID:</span>
+                                            <%=data[i].pmcid%></a> <a href="<%=data[i].dlink%>" target="_blank"><span
+                                                class="pub-a">DOI:</span> <%=data[i].doi%> </a>
+                                    </h6>
+                                        <a href="https://publishing.aip.org/publications/latest-content/progress-toward-antiviral-treatments-for-covid-19/" style="z-index: 1000"
+                                            
+                                            class="btn btn-sm synopsis-btn">AIP Press Release</a>
+                                    </div>
+                                <% } else if (data[i].id == "5fc91ef7e15df92085ca87c8"){%> 
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="pub-title" style="margin-bottom: 0 !important;"> <a href="<%=data[i].plink%>" target="_blank"><span class="pub-a">PMCID:</span>
+                                            <%=data[i].pmcid%></a> <a href="<%=data[i].dlink%>" target="_blank"><span
+                                                class="pub-a">DOI:</span> <%=data[i].doi%> </a>
+                                    </h6>
+                                        <a href="https://pubs.acs.org/doi/10.1021/jacs.9b13306" style="z-index: 1000"
+                                            
+                                            class="btn btn-sm synopsis-btn">JACS Spotlight</a>
+                                    </div>
+                                <% } %> 
+                                <div>
+                                    <% for (let j = 0; j < data[i].tags.length; j++){ %> 
+                                        <% let color = data[i].tagsColor[j];%>
+                                        <span class="badge" style="background-color: <%=color%>;"><%=data[i].tags[j]%></span>
+                                    <% } %>
+                                    
+                                </div>
+
+                            </div>
+                            <% if (user){ %>
+                            <button number="<%= i %>"
+                                style="border-radius: 0 !important; border-bottom: 1px solid white;"
+                                class="btn delete-button btn-danger ">
+                                Delete
+                            </button>
+                            <% } %>
+                        </div>
+                        <% }%>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/publications.js"></script>
+        <%- include ('./partials/footer.ejs') %>
+</body>
+
+</html>

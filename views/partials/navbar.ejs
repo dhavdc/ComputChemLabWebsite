@@ -1,0 +1,90 @@
+<!-- Website created by Daniel Khavrutskii -->
+
+<div class="container navbar-container">
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/"><b class="red-color logo-size">Shen</b><span class="logo-part logo-size"><!--<span class="red-color logo-size">Chem</span>--></span><span class="black-color logo-size"><b>Lab</b></span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Topics
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/topics/cphmd">CpHMD</a>
+                    <a class="dropdown-item" href="/topics/pka-calc">pK<sub>a</sub> Calculations</a>
+                    <a class="dropdown-item" href="/topics/channels-transporters">Receptors/Transporters</a>
+                    <a class="dropdown-item" href="/topics/drug-design">Drug Design</a>
+                    <a class="dropdown-item" href="/topics/materials-design">Materials Design</a>
+
+                </div>
+            </li>
+            <% if (page == "publications") { %>
+            <li class="nav-item">
+                <a class="nav-link active" href="/publications"><b>Publications</b></a>
+            </li>
+            <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/publications">Publications</a>
+            </li>
+            <% } %>
+
+            
+
+            <% if (page == "team") { %>
+            <li class="nav-item">
+                <a class="nav-link active" href="/team"><b>Team</b></a>
+            </li>
+            <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/team">Team</a>
+            </li>
+            <% } %>
+
+            <li class="nav-item">
+                <a class="nav-link" href="https://wiki.computchem.org/">Wiki</a>
+            </li>
+
+            <% if (page == "openings") { %>
+            <li class="nav-item">
+                <a class="nav-link active" href="/openings"><b>Openings</b></a>
+            </li>
+            <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/openings">Openings</a>
+            </li>
+            <% } %>
+
+            <% if (page == "contact") { %>
+            <li class="nav-item">
+                <a class="nav-link active" href="/contact"><b>Contact</b></a>
+            </li>
+            <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <% } %>
+            
+        </ul>
+        <form action="/search" method="POST" class="form-inline my-2 my-lg-0">
+            <input name="searchText"class="form-control mr-sm-2" type="search" placeholder="Search Publications" aria-label="Search">
+            <button style="margin-left: -50px;"class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            
+            <!-- <a class="btn my-2 my-sm-0" href="http://165.22.35.153/">Wiki</a>
+            <% if (user){ %>
+                <a class="btn my-2 my-sm-0" href="/dashboard">Dashboard</a>
+            <% }else{ %> 
+                <a class="btn my-2 my-sm-0" href="/login">Login</a>
+            <% } %> -->
+        </form>
+    </div>
+</nav>
+</div>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <%- include ('../partials/header.ejs') %>
+
+</head>
+
+<%- include ('../partials/navbar.ejs') %>
+
+
+<body>
+    <h1 class="text-center">Welcome to the Dashboard, <b><%=user.name%></b>!</h1>
+    <div class="text-center">
+        <form action="/login/logout" method="get">
+            <button type="submit" class="btn btn-success"> Logout </button>
+        </form>
+
+
+    </div>
+
+
+
+</body>
+
+
+
+
+
+</html>

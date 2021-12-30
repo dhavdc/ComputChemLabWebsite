@@ -1,0 +1,746 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px; /* Set the fixed height of the footer here */
+    line-height: 135px; /* Vertically center the text there */
+
+
+}
+
+/* Badges (Publication tags) */
+
+/* GPCR */
+.badge-1{ 
+    color: white;
+    background-color: #efd31a
+}
+/* Ion Transporter */
+.badge-2{
+    color: white;
+    background-color: #f5ae1a
+}
+/* Cysteine Protease */
+.badge-3{
+    color: white;
+    background-color: #f36b28
+}
+/* Kinase */
+.badge-4{
+    color: white;
+    background-color: #ef4924
+}
+/* Chitosan */
+.badge-5{
+    color: white;
+    background-color: #ee2f43;
+}
+/* Covalent inhibitor */
+.badge-6{
+    color: white;
+    background-color: #ec458b;
+}
+/* Reversible inhibitor */
+.badge-7{
+    color: white;
+    background-color: #b856a1;
+}
+/* Opioid */
+.badge-8{
+    color: white;
+    background-color: #905ba6;
+}
+/* Kinetics */
+.badge-9{
+    color: white;
+    background-color: #528cc9;
+}
+/* Binding free energy */
+.badge-10{
+    color: white;
+    background-color: #27beb5;
+}
+/* pKa calculation */
+.badge-11{
+    color: white;
+    background-color: #68bf6b;
+}
+/* CpHMD development */
+.badge-12{
+    color: white;
+    background-color: #a1cd4a;
+}
+.badge-13{
+    color: white;
+    background-color: #008148;
+}
+
+.footer-container{
+    max-width: 680px;
+    padding: 0 15px;
+}
+html{
+    position: relative;
+    min-height: 100% !important;
+}
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+.row.row-no-gutter {
+    margin: 0
+}
+.row.row-no-gutter [class*="col-"] {
+    padding: 0
+}
+.img-full-width {
+    max-height: none;
+    min-height: none;
+    width: 100%;
+    height: 170px;
+}
+
+.has-inner .row.row-no-gutter {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row.row-no-gutter .inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.web-dev{
+    font-size: 5px;
+}
+
+
+.team-container{
+    width: 60%;
+}
+
+.team{
+    background: url("/images/patterns/polaroid_@2X.png");
+}
+
+.modal{
+    top: 30px !important;
+}
+
+.publication-link{
+    color: black;
+    text-decoration: none !important;
+}
+.publication-link:hover{
+    color: black;
+}
+
+.publication-imagePreview{
+    width: 50px;
+    height: 50px;
+}
+
+.col-sm-3:hover{
+    background: black !important;
+
+}
+
+
+body {
+    /* background-color: rgb(245, 245, 245) !important; */
+    /* background: url(../images/patterns/polaroid_@2X.png); */
+    /* font-family: 'Lato', sans-serif !important; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Raleway', sans-serif !important;
+
+
+    margin-bottom: 150px !important; /* Margin bottom by footer height */
+
+
+
+
+    /* background-image: url('https://gatewaytoscience.org/wp-content/uploads/2010/09/Chemistry-Background.jpg'); */
+
+
+}
+
+.former-member:before {
+    content:"• ";
+}
+
+.former-member{
+    padding: 0 !important;
+    border: none !important;
+}
+
+.icon-link {
+    color: rgb(36, 36, 36) !important;
+}
+
+
+@media (max-width: 1200px) { 
+    .additional-links{
+        display: none; 
+    }
+}
+
+
+.slide-card{
+    border: 2px solid rgb(173, 173, 173) !important;
+}
+
+.btn-rm{
+    background-color: #D7668B !important;
+    color: white !important;
+}
+
+.card-text{
+    color: black !important;
+}
+
+.yellow-color{
+    color: #ffd202
+}
+
+.black-color{
+    color: #4795dd !important;
+}
+.logo-size{
+    font-size: 30px;
+}
+
+
+.red-color{
+    color: #e51a37 !important;
+}
+
+
+
+.glide__bullet{
+    background-color: gray !important;
+}
+
+
+.card-img-top{
+    height: 150px;
+    object-fit: contain;
+}
+.card{
+    min-height: 390px;
+}
+
+
+
+
+.img-circle{
+    border-radius: 60% !important;
+    background-size: cover;
+    object-fit: contain;
+
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.logo-part {
+    font-style: italic;
+    color: lightcoral;
+}
+
+.navbar-brand {
+    color: #378fdf !important;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+/* Search Bar */
+.mr-sm-2 {
+    border-radius: 15px !important;
+}
+
+.active{
+    color: #000080 !important;
+}
+.navbar {
+    background: white !important;
+}
+
+.nav-link:hover {
+    color: #378fdf !important;
+}
+
+.btn-send {
+    background-color: #378fdf !important;
+    color: white !important;
+}
+
+.contact-container {
+    padding-top: 20px;
+}
+
+.press-release{
+    height: 30px;
+    width: 50px;
+    object-fit: contain;
+    
+}
+
+
+.card-text {
+    font-size: 14px;
+    text-align: left;
+}
+
+.list-group-item{
+
+}
+
+.title {
+    padding-top: 20px;
+}
+
+.former{
+    min-height: 168px;
+}
+
+.team-container {
+    padding-top: 40px;
+}
+
+.slick-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+}
+
+.slick-slide {
+    height: auto;
+
+}
+
+.umb {
+    color: white;
+}
+
+
+
+
+.grid-item {
+    width: 160px;
+    height: 120px;
+    float: left;
+    background: #D26;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+}
+
+/* .card{
+    margin: 0 auto !important;
+} */
+
+.moreinfocard {
+    background-color: #378fdf !important;
+}
+
+.dark-grey-text{
+    font-size: 15px;
+}
+
+.job-description{
+    font-size: 13px;
+}
+
+
+
+#about-medal {
+    position: absolute;
+    top: 27.2%;
+    left: 51.3%;
+    height: 102px;
+    width: 102px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.navbar{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+
+svg {
+    width: 250px;
+}
+
+.card-img {
+    height: 120px;
+}
+
+.card-title{
+    text-align: left;
+}
+
+.high-title{
+    color: #000080;
+    font-weight: bold;
+}
+
+.navy-blue{
+    color: #000080;
+
+}
+
+.btn-read-more{
+    background-color: #378fdf !important;
+    color: white !important;
+}
+
+
+.footer-text {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.abstract-card{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+
+
+.year-btn:hover{
+    background-color: #378fdf;
+    color: white !important;
+}
+
+.synopsis-btn:hover{
+    background-color: #378fdf;
+    color: white !important;
+}
+.synopsis-btn{
+    color: red !important;
+    font-weight: bold !important;
+}
+
+.pub-a{
+    color: black;
+}
+
+
+
+
+
+.container-1 {
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.35), 
+        rgba(0, 0, 0, 0.35)
+    ),
+    url('../images/banner-min.png');
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 200px #469beb; */
+    color: white;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+
+}
+
+.layer{
+
+
+}
+
+.openings{
+    background: none !important;
+    background-color: white;
+}
+
+.glide__arrow--left {
+    left: -3em !important;
+    color: #000080 !important;
+    background-color: white  !important;
+
+}
+
+.glide__arrow--right {
+    right: -3em !important;
+    color: #000080 !important;
+    background-color: white  !important;
+
+
+
+}
+
+.highlights-title {
+    color: white;
+}
+
+.topics-title {
+    padding-bottom: 20px;
+}
+.topics{
+    padding-top: 20px;
+}
+
+.openings-jumbo{
+
+    background-image: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
+        ),
+    
+    url("/images/inner-harbor.jpg");
+    /* background-image: url("https://images.unsplash.com/photo-1542031630-99647f0f3e54?ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80"); */
+    background-position-y: -10px;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    color: white;
+}
+
+.card-border{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.recent-highlights {
+    margin-top: 35px;
+    /* background: rgb(153, 224, 248) !important; */
+    /* background: rgb(103,188,252); */
+/* background: linear-gradient(297deg, rgba(103,188,252,0.8029586834733894) 16%, rgba(98,174,241,0.8) 28%, rgba(99,176,249,0.8) 49%, rgba(85,187,249,0.8) 70%, rgba(74,201,255,0.8) 80%); */
+    /* background-color: #F0FAFF; */
+
+}
+
+.highlights-title{
+    color: black;
+    padding-bottom: 10px;
+}
+
+.group{
+    border: 0px !important;
+}
+.pub-block{
+    border: none !important;
+}
+
+.pub-link{
+    color: black !important;
+}
+
+.card{
+    /* border: none !important; */
+}
+
+.highlight-cards {
+    padding-top: 30px;
+}
+
+.glide__bullets{
+    bottom: 0em !important;
+}
+.glide__bullet--active{
+    background-color: #000080  !important;
+}
+
+@media (min-width: 1200px){
+    .publications-container{
+        max-width: 1000px !important;
+    }
+    .topics-container{
+        max-width: 1000px !important;
+    }
+}
+
+.home-title{
+    /* font-family: 'Marck Script', cursive; */
+}
+
+.grey-text{
+    margin-bottom: 5px;
+}
+
+.jana-img{
+    height: 183px;
+}
+
+.div-centered {
+    text-align: left; 
+    margin: auto; 
+    width: 200px;
+}
+
+.navbar-brand{
+    font-family: 'Yellowtail', cursive;
+}
+
+.degree{
+    font-size: 14px;
+    margin: 0;
+}
+.left{
+    text-align: left;
+    padding: 0px 63px;
+
+}
+
+.picture-link{
+    height: 80px;
+    width: 230px;
+    margin: auto;    
+    display: block;
+    margin-top: 25px;
+
+}
+.picture-link-2{
+    height: 100px;
+    margin: auto;    
+    display: block;
+    margin-top: 15px;
+
+}
+
+
+.topics-container{
+    background-color: white;
+    padding-top: 17px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.publications-container{
+    
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    flex: 1;
+
+}
+
+
+.publications-buttons {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.list-group {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.edit-button {
+    float: right;
+}
+
+.fa, .fas{
+    opacity: 0.8;
+}
+
+
+.fa-7x:hover {
+    color: #378fdf;
+}
+
+.icon-descriptor {
+    margin-top: 20px;
+}
+
+
+.main {
+    margin-left: 140px;
+    /* Same width as the sidebar + left position in px */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+}
+
+
+.highlight-image{
+    width: 100%;
+    height: 180px;
+}
+
+.slide{
+    max-height: 500px;
+    height: 400px;
+}
+.twitter-tweet{
+    margin-top: 0px !important;
+    height: 350px !important;
+    
+}
+
+.openings-container{
+    padding-top: 30px;
+}
+
+
+.spec-title{
+    padding-top: 20px;
+}
+
+
+.pub-authors{
+    font-size: 15px;
+}
+
+.hat{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 2;
+    transform: rotate(340deg);
+    z-index: 100;
+}
+
+.hat2{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -10;
+    transform: rotate(340deg);
+    z-index: 100;
+}
+
+.z-depth-1-half:hover{
+    border: 2px solid #007bff;
+}
+
+.frontp-link{
+    color: white;
+}
+.frontp-link:hover{
+    color: white;
+}
+
+.pub-title{
+    font-size: 15px;
+}
+
+.pub-description{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.zotero{
+    color: red;
+}

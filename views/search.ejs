@@ -1,0 +1,86 @@
+<html>
+
+<head><%- include ('./partials/header.ejs') %>
+    <script src="https://kit.fontawesome.com/4bdaa3b696.js" crossorigin="anonymous"></script>
+    <title>Search</title>
+
+</head>
+<%- include ('./partials/navbar.ejs') %>
+
+<body>
+    <div style=" height: 100%;" class="container publications-container">
+        <h1 class="text-center title">Search: <%=searchText%></h1>
+        <div class="publication container">
+            <div class="list-group">
+                <% publications.sort((a, b) => (a.date > b.date) ? -1 : 1)%>
+                <% publications.forEach((publication) => { %>
+                <% if (publication.imagePath){ %>
+                <div class="pub-block">
+                    <div class="group" style="display: flex;">
+                        <a id="<%= publication.id %>" href="<%= publication.link %>"
+                            style="border-radius: 0 !important;"
+                            class="list-group-item list-group-item-action pub-link">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="text-muted pub-number"><%=publication.number%></small>
+                                <small class="text-muted pub-date"><%=publication.date%></small>
+                            </div>
+                            <h6 class="mb-1 pub-authors"><%= publication.authors%></h6>
+                            <h6 class="mb-1 pub-description"><b><%= publication.description %></b></h6>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="text-muted pub-title"><%=publication.title%></small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card" style="min-height: 0px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="<%= publication.imagePath %> " style="object-fit:cover; width: 100%"
+                                        alt="Card image cap">
+                                </div>
+                                <div class="col-lg-9">
+                                    <p style="font-size: 16px;" class="card-text"><%=publication.imageDescription%></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%} else{ %>
+                    <div class="pub-block">
+                        <div class="group" style="display: flex;">
+                            <a id="<%= publication.id %>" href="<%= publication.link %>"
+                                style="border-radius: 0 !important;"
+                                class="list-group-item list-group-item-action pub-link">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="text-muted pub-number"><%=publication.number%></small>
+                                    <small class="text-muted pub-date"><%=publication.date%></small>
+                                </div>
+                                <h6 class="mb-1 pub-authors"><%= publication.authors%></h6>
+                                <h6 class="mb-1 pub-description"><b><%= publication.description %></b></h6>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="text-muted pub-title"><%=publication.title%></small>
+                                </div>
+                            </a>
+                        </div>
+                        <% }%>
+                    </div>
+                    <% }) %>
+                </div>
+            </div>
+            <% if (publications === undefined || publications.length == 0){ %>
+            <h3 class="text-center title">Nothing found</h1>
+                <div class="text-center mt-5">
+                    <i class="far fa-frown fa-10x"></i>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <%- include ('./partials/scripts.ejs') %>
+
+</body>
+
+
+
+
+
+
+</html>

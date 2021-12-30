@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('./partials/header.ejs') %>
+    <title>Album Test</title>
+    <%- include ('./partials/navbar.ejs') %>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-2 mb-4">Test Album </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    Turn left
+                </div>
+                <div class="col-6">
+                    <div id="flipbook" class="mx-auto">
+                        <img src="/images/screenshot.png" class="hard">
+                        <img src="/images/covidslide.png" alt="">
+                        <img src="/images/slide75.png" alt="">
+                        <img src="/images/slide772.png" alt="">
+                    </div>
+                </div>
+                <div class="col-3">
+                    Turn Right
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <%- include ('./partials/scripts.ejs') %>
+    <%- include ('./partials/footer.ejs') %>
+    <script src="../scripts/turn.min.js"></script>
+    <script type="text/javascript">
+        $("#flipbook").turn({
+            width: 600,
+            height: 600,
+            autoCenter: true,
+            display: "single"
+        });
+    </script>
+
+</body>
+</html>

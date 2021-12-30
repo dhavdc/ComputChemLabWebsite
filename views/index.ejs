@@ -1,0 +1,557 @@
+<html>
+
+<head>
+    <%- include ('./partials/header.ejs') %>
+    <title>Shen Lab at Maryland</title>
+    <!-- Required Core stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme stylesheet -->
+    <link rel="stylesheet" href="/styles/computchemlab.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<%- include ('./partials/navbar.ejs') %>
+
+<body>
+    <div class="layer">
+
+        <div class="jumbotron jumbotron-fluid container-1">
+            <div class="container blah-container">
+                <h1 class="display-5 home-title">The Shen Group Explores</h1>
+                <h1 class="lead home-title">
+                    Structure-Dynamics-Function Relationships and Inhibition Strategies
+                </h1>
+                <div class="mb-2">
+                    <a class="btn btn-primary btn-sm moreinfo" data-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">
+                        About Us
+                    </a>
+                </div>
+                <div>
+                    <div class="moreinfo collapse" id="collapseExample">
+                        We are a team of scientists working at the intersection of chemistry, biology,
+                        physics, medicine, and computer science. Our goal is to accelerate biomedical
+                        discovery and materials innovation through the development and application of simulation and
+                        data
+                        science tools.
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-envelope" style="color: #469fff"></i><a href="mailto:jana.shen@rx.umaryland.edu"
+                        class="frontp-link">
+                        Email</a>
+                    <br>
+                    <i class="fab fa-twitter" style="color: #469fff"></i><a
+                        href="https://twitter.com/janashenlab?lang=en" class="frontp-link">
+                        Twitter @JanaShenLab</a>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="shadow-sm p-3 bg-white ">
+        <div class="container text-center topics ">
+            <div class="row justify-content-md-center ">
+                <div class="col-md">
+                    <a class="icon-link" href="topics/cphmd"><i class="CpHMD fas fa-server fa-7x"></i></a>
+                    <p class="icon-descriptor">CpHMD</p>
+                </div>
+                <div class="col-md">
+                    <a class="icon-link" href="/topics/drug-design"><i class="drug-design fa fa-capsules fa-7x"></i></a>
+                    <p class="icon-descriptor">Drug Design</p>
+                </div>
+                <div class="col-md">
+                    <a class="icon-link" href="/topics/pka-calc"><i class="pka-calculations fa fa-dna fa-7x"></i></a>
+                    <p class="icon-descriptor">pK<sub>a</sub> Calculations</p>
+                </div>
+                <div class="col-md">
+                    <a class="icon-link" href="/topics/channels-transporters"><i
+                            class="channels-transporters fa fa-atom fa-7x"></i></a>
+                    <p class="icon-descriptor">Receptors/Transporters</p>
+                </div>
+                <div class="col-md">
+                    <a class="icon-link" href="/topics/materials-design"><i
+                            class="materials-design fa fa-drafting-compass fa-7x"></i></a>
+                    <p class="icon-descriptor">Materials Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recent-highlights">
+        <div class="container text-center ">
+            <div class="glide">
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#83">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Profiling MAPK cysteine reactivity in silico
+                                        </h6>
+                                        <img src="/images/MAPK.png" class="card-img-top" style="object-fit: contain;"
+                                            alt="...">
+                                        <p class="card-text">
+                                            Liu et al, RSC Med Chem, 2021
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-7">
+                                                <p class="card-text">We assessed and rationalized the cysteine reactivities for all 14 MAP kinases.</p>
+                                            </div>
+                                            <div class="col-5">
+                                                        <img src="/images/team/RUIBINCROPPED.png" alt="..."
+                                                        style="width:70px; height: 70px;" class="img img-circle">                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#82x">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Kinase front pocket cysteine has various reactivities
+                                        </h6>
+                                        <img src="/images/ncap.png" class="card-img-top" style="object-fit: contain;"
+                                            alt="...">
+                                        <p class="card-text">
+                                            Liu & Zhan et al, J Med Chem, 2021
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-7">
+                                                <p class="card-text">Exploring the reactivities of the front pocket cysteine in human kinases for covalent drug design.</p>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img src="/images/team/RUIBINCROPPED.png" alt="..."
+                                                        style="width:70px; height: 70px;" class="img img-circle">
+                                                    </div>
+                                                    <div class="col-6" style="margin-left: -15px">
+                                                        <img src="/images/team/ShaoqiZhan.png" alt="..."
+                                                        style="width:70px; height: 70px;" class="img img-circle">
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#81">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">How fentanyl unbinds from mu-opioid receptor
+                                        </h6>
+                                        <img src="/images/slide1.png" class="card-img-top" style="object-fit: cover;"
+                                            alt="...">
+                                        <p class="card-text">
+                                            Mahinthichaichan et al, JACS Au 2021
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">We elucidated the mechanism and kinetics of fentanyl-mOR dissociation to help evaluate drug overdose reversal strategies.                                                 </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/PAWEENCROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#80">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Our first effort to combat the opioid crisis!
+                                        </h6>
+                                        <img src="/images/fig1.jpg" class="card-img-top" style="object-fit: cover;"
+                                            alt="...">
+                                        <p class="card-text">
+                                            Vo et al, Nat Commun 2021
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">Deciphering how fentanyl binds mu-opioid receptor
+                                                    represents the first step in understanding the cascade of
+                                                    molecular events leading to addiction.</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/quynh_team.jpg" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#65">
+                                <div id="santabox" class="position-relative">
+                                    <svg class="hat2">
+                                        <g>
+                                            <rect x="0" y="0" width="75" height="35" style="stroke:red; stroke-width:2; fill:none"></rect>
+                                            <text x="2" y="15" font-weight="bold" fill="red">JACS</text>
+                                            <text x="2" y="30" font-weight="bold" fill="red">Spotlight</text>                                        </g>
+                                        
+                                    </svg>                                    
+                                    <div class="card slide-card mx-auto" style="width: 20rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title high-title">Towards
+                                                orally
+                                                available broad-spectrum
+                                                antiviral drugs
+                                            </h6>
+                                            <img src="/images/TOC2.png" class="card-img-top" alt="...">
+                                            <p class="card-text">
+                                                Verma et al, J Am Chem Soc 2020.
+                                            </p>
+                                            <div class="row no-gutters">
+                                                <div class="col-9">
+                                                    <p class="card-text">Study of SARS main proteases revealed
+                                                        proton-coupled mechanism and an opportunity for small-molecule
+                                                        broad-spectrum antiviral drug design
+                                                    </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="/images/team/picture.jpg" alt="..."
+                                                        style="width:70px; height: 70px;" class="img img-circle">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="glide__slide mt-3">
+                            <a class="card-link"
+                                href="https://www.eurekalert.org/pub_releases/2020-09/aiop-pta090920.php">
+                                <div id="santabox" class="position-relative">
+                                    <svg class="hat2">
+                                        <g>
+                                            <rect x="0" y="0" width="65" height="35" style="stroke:red; stroke-width:2; fill:none"></rect>
+                                            <text x="2" y="15" font-weight="bold" fill="red">Press</text>
+                                            <text x="2" y="30" font-weight="bold" fill="red">Release</text>                                        </g>
+                                    </svg>                                    
+                                    <div class="card slide-card mx-auto"
+                                        style="width: 20rem; border: 2px solid goldenrod !important">
+                                        <div class="card-body">
+                                            <h6 class="card-title high-title" style="margin-bottom:0px;">
+                                                Address the
+                                                challenge of COVID-19 and beyond
+                                            </h6>
+                                            <img src="/images/covidslide.png" class="card-img-top" alt="...">
+                                            <p class="card-text">
+                                                Henderson et al, J Chem Phys, 2020
+                                            </p>
+                                            <div class="row no-gutters">
+                                                <div class="col-9">
+                                                    <p class="card-text">
+                                                        Studying proton-coupled conformational dynamics of a critical
+                                                        enzyme
+                                                        in SARS and MERS coronaviruses for broad-spectrum antiviral drug
+                                                        design.
+                                                    </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="/images/team/jack_team.jpg" alt="..."
+                                                        style="width:70px; height: 70px;" class="img img-circle">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#75">
+                                <div class="card slide-card mx-auto" style="width: 20rem">
+
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title" style="margin-bottom:0px;">
+                                            Nature’s backup plan for ion transporters
+                                        </h6>
+                                        <img src="/images/slide75.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Henderson et al, Proc Natl Acad Sci 2020.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">
+                                                    Alternative binding site and proton sharing may represent important
+                                                    general mechanisms of proton-coupled transport in secondary active
+                                                    transporters
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/jack_team.jpg" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#76">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Accurate prediction of reactive cysteines is
+                                            possible
+                                        </h6>
+                                        <img src="/images/Cys_TOC.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Harris et al, J Chem Theory Comput 2020.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">Benchmarking our GPU-based CpHMD tool to facilitate
+                                                    targeted covalent inhibitor design</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/ROBERTCROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#74">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">How does an electric field control soft
+                                            matter?
+                                        </h6>
+                                        <img src="/images/TOC.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Mahinthichaichan et al, ACS Omega 2020.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">Discover how electric signals induce conformational
+                                                    changes of an aminopolysaccharide chain in an unexpected way</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/PAWEENCROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <div class="card slide-card mx-auto" style="width: 20rem;">
+                                <div class="embed-responsive">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="en" dir="ltr">Persistence. Dedication. A true champion. Congrats to
+                                            Quynh Vo for completing the JPG puzzle challenge at <a
+                                                href="https://twitter.com/hashtag/bps20?src=hash&amp;ref_src=twsrc%5Etfw">#bps20</a>
+                                            <a href="https://t.co/MfFlnsQ2aA">pic.twitter.com/MfFlnsQ2aA</a></p>&mdash;
+                                        JGenPhysiol (@JGenPhysiol) <a
+                                            href="https://twitter.com/JGenPhysiol/status/1229888784323563522?ref_src=twsrc%5Etfw">February
+                                            18, 2020</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+                                    </script>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#70">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Electrostatic coupling enables conformational
+                                            plasticity of kinase</h6>
+                                        <img src="/images/Electrostatic.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Tsai et al, J Am Chem Soc 2019.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">Allowing protonation states to change may be a key
+                                                    to sample the various conformational states of kinases.
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/TSAICROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#68">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Accelerating targeted covalent kinase
+                                            inhibitor design</h6>
+                                        <img src="/images/Accelerating.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Liu et al, J Am Chem Soc 2019.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">A molecular dynamics tool put to test for
+                                                    discovering covalent
+                                                    hotspots in
+                                                    kinases
+                                                    and
+                                                    other
+                                                    drug targets.</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/RUIBINCROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#61">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Continuous constant pH molecular dynamics
+                                            released in Amber
+                                        </h6>
+                                        <img src="/images/Continuous.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Harris et al, J Chem Inf Model 2019.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">A new GPU implementation for rapid and accurate
+                                                    pK<sub>a</sub>
+                                                    predictions and
+                                                    proton-coupled dynamics.</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/ROBERTCROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#66">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Modern materials: responsive, reconfigurable,
+                                            multi-functional</h6>
+                                        <img src="/images/Modern.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Tsai et al, Chem Mater 2018.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">Exploiting a pK<sub>a</sub> gradient for persistent
+                                                    but
+                                                    erasable gradient
+                                                    in
+                                                    structural and mechanical properties.</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/TSAICROPPED.png" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="glide__slide mt-3">
+                            <a class="card-link" href="/publications/#65">
+                                <div class="card slide-card mx-auto" style="width: 20rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-title high-title">Ligand protonation state controls water in
+                                            protein–ligand binding
+                                        </h6>
+                                        <img src="/images/Ligand.png" class="card-img-top" alt="...">
+                                        <p class="card-text">
+                                            Henderson et al, J Phys Chem Lett 2018.
+                                        </p>
+                                        <div class="row no-gutters">
+                                            <div class="col-9">
+                                                <p class="card-text">Pyrimidine protonation shifts the ligand binding
+                                                    mode from water-mediated to direct hydrogen bonding.</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/images/team/jack_team.jpg" alt="..."
+                                                    style="width:70px; height: 70px;" class="img img-circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                    <button class="glide__bullet" data-glide-dir="=6"></button>
+                    <button class="glide__bullet" data-glide-dir="=7"></button>
+                    <button class="glide__bullet" data-glide-dir="=8"></button>
+                    <button class="glide__bullet" data-glide-dir="=9"></button>
+                    <button class="glide__bullet" data-glide-dir="=10"></button>
+                    <button class="glide__bullet" data-glide-dir="=11"></button>
+                    <button class="glide__bullet" data-glide-dir="=12"></button>
+                    <button class="glide__bullet" data-glide-dir="=13"></button>
+                    <button class="glide__bullet" data-glide-dir="=14"></button>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ('./partials/footer.ejs') %>
+
+
+    <%- include ('./partials/scripts.ejs') %>
+    <script src="scripts/general.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js">
+    </script>
+
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            autoplay: 10000,
+        }).mount();
+    </script>
+
+</body>
+
+</html>
